@@ -1,175 +1,383 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Portfolio redesign inspired by olakunle.dev
+  Free to use for personal portfolio; do not copy third-party content verbatim.
 -->
-<html>
-	<head>
-		<title>Kehinde Abe's Portfolio </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Kehinde Abe — Data Scientist & ML Engineer</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Base theme -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Kehinde Abe<br />
-						</h1>
-						<p> 
-							Experienced Data Scientist and Machine Learning Engineer with strong analytical skills, seeking to utilize Python, R, SQL,
-							to drive informed business decisions through insightful recommendations,
-							backed by exceptional problem-solving, communication, and collaboration abilities.
-						</p>
-							 
-	
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="image main"><img src="images/Ken.jpeg" alt="" /></a>
-							
-						</ul>
-					</div>
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        var savedTheme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', initialTheme);
+      } catch (e) {}
+    </script>
+    
+    <!-- Scoped overrides to mirror the referenced design -->
+    <style>
+      :root {
+        --background: #ffffff;
+        --surface: #ffffff;
+        --muted-surface: #f5f7fb;
+        --text: #0b1220;
+		--text-hero: #ffffff;
+        --muted: #667085;
+        --accent: #2563eb; /* blue */
+        --accent-2: #7c3aed; /* violet */
+        --border: rgba(2,6,23,0.08);
+        --radius: 16px;
+        --shadow: 0 10px 30px rgba(2,6,23,0.08);
+        --header-bg: rgba(255,255,255,0.75);
+      }
+      :root[data-theme="dark"] {
+        --background: #0e0f14;
+        --surface: #151821;
+        --muted-surface: #0f1320;
+        --text: #e7e9ee;
+        --muted: #9aa4b2;
+        --accent: #74c0fc;
+        --accent-2: #a78bfa;
+        --border: rgba(255,255,255,0.08);
+        --radius: 16px;
+        --shadow: 0 10px 30px rgba(0,0,0,0.35);
+        --header-bg: rgba(14,15,20,0.6);
+      }
 
-				<!-- Header -->
-					<!-- <header id="header">
-						<a href="index.html" class="logo">Kehinde for Data Science</a>
-					</header> -->
+      /* Reset some defaults from the theme for a cleaner look */
+      body { background: var(--background); color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      h1, h2, h3, h4 { font-family: 'Space Grotesk', Inter, system-ui, -apple-system, sans-serif; letter-spacing: -0.02em; color: var(--text); }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { color: #1d4ed8; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="#0">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<!-- <li><a href="https://www.linkedin.com/in/oluwaseyi-bondefaiye-owope-ab9951b1/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/SeyiBonde" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
-						</ul>
-					</nav>
+      .container { width: min(1100px, 92%); margin: 0 auto; }
 
-				<!-- Main -->
-					<div id="main">
+      /* Sticky header */
+      #header.site-header { position: sticky; top: 0; z-index: 9999; backdrop-filter: saturate(150%) blur(8px); background: var(--header-bg); border-bottom: 1px solid var(--border); }
+      #header .nav { display: grid; grid-template-columns: auto 1fr auto; align-items: center; height: 44px; column-gap: 12px; }
+      #header .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); }
+      #header .brand-avatar { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 2px solid #e6ecf5; box-shadow: 0 4px 10px rgba(2,6,23,0.08); }
+      #header .links { display: flex; gap: 1.1rem; align-items: center; justify-content: center; }
+      #header .links a { color: var(--text); opacity: 0.9; font-weight: 600; font-size: 0.95rem; padding-block: 0.15rem; cursor: pointer; }
+      #header .links a:hover { opacity: 1; color: #111827; }
+      #header .actions { display: flex; align-items: center; gap: 8px; }
+      #header .theme-toggle { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); background: #f8fafc; color: #0b1220; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow); }
+      #header .resume-btn { display: none; }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date"></span>
-									<br>
-									
-									<h2><a href="#">Exploratory Data analysis and Machine Learning prediction<br />
-									</a></h2>
-									<p>The task is to predict whether a given adult makes more than $50,000 a year or not based on a number of attributes. 
-										After prediction, models should be optimised, evaluated and are compared as: How optimisation improves the performance of the model. 
-										How parameters were used for optimisation, and how the accuracy of the models can be compared after optimizations.
-										<br>
-										I Performed exploratory data analysis, using python libraries including Numpy, Pandas, Matplotlib, Seaborn, feature engineering, and
-										built machine learning models using various algorithms with tools like Scikit-learn, Keras, and TensorFlow, inlcluding Artificial Neural Network (ANN).
-										I also used techniques such as cross-validation, hyperparameter tuning, and model evaluation to improve the performance of the models. 
-										I was able to identify the most important features that influence the prediction and offer recommendations on how to maximize the accuracy
-										of the models.
-									</p>
- 
-								</header>
-								<a href="#" class="image main"><img src="images/ml.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/kennyOlakunle/MLModelPredFor_Census_Income" class="button large">View Project </a></li>
-								</ul>
-							</article>
+      /* Ensure no legacy overlays block header clicks */
+      .navPanel, #navPanel, .titleBar { display: none !important; }
+      #header.site-header, #header.site-header * { pointer-events: auto; }
 
-						
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">May 5, 2022</span> -->
-										<h2><a href="#0">Machine Learning Prediction for Medical Insurance using Supervised Learning with Linear Regression Model<br />
-										</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/medcost.png" alt="medical cost image" /></a>
+      /* Anchor scroll offset for sticky header */
+      #intro, #projects, #skills, #footer { scroll-margin-top: 72px; }
 
-									<p>
-										The aim of this task is to analyse and use machine learning to build a prediction model to estimate the medical cost of individuals 
-										based on the predicters given in the dataset. The factors include age,sex, BMI(Body Mass Index), children, smoker, region, and the medicalCost.
-										This will help answer some questions which would be asked in the analysis. I perfomred different analysis on the dataset, then built a linear regression model and
-										Random Forest Regressor to predict the medical cost of individuals using python libraries including Numpy, Pandas, Matplotlib, Seaborn, and Scikit-learn.
-										
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kennyOlakunle/MLPredictionFor_Medical_Insurance" class="button">View Project</a></li>
-									</ul>
-								</article>
-					
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">July 8, 2022</span> -->
-									<h2><a href="#0">Exploratory Data analysis and Machine learning predictions of FoodHub Project <br />
-										</a>
-									</h2>
-									</header>
-									<a href="#0" class="image fit"><img src="images/Foodhub3.jpeg" alt="" /></a>
-									<p> FoodHub, a NYC-based online app, connects food lovers with top restaurants. As urban dining options grow, it streamlines orders through its platform. Customers order,
-										and users rate their experience. Profiting from order margins, the company uses data to refine offerings and boost user satisfaction.
-										I used python libraries including numpy, pandas, matplotlib, seaborn, sklearn and statsmodels. I cleaned up the data, visualized and explored it and trained the data a few times before building the final linear regression model. 
-										I was able to identify the key factors that influence the pricing and offer recommendations on how they can maximize their profit and take advantage of opportunities in the market.
-										
-										
-									
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kennyOlakunle/foodhub_data_analysis" class="button">View Project</a></li>
-									</ul>
-								</article>
+      /* Hero (light) */
+      #intro.hero { padding: 72px 0 40px; border-bottom: 1px solid var(--border); background: radial-gradient(1200px 400px at 75% 10%, #eef2ff, transparent 60%), linear-gradient(180deg, #f8fafc 0%, transparent 70%); }
+      :root[data-theme="dark"] #intro.hero { background: radial-gradient(1200px 400px at 75% 10%, rgba(62,66,98,0.3), transparent 60%), linear-gradient(180deg, #0e0f14 0%, transparent 70%); }
+      .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+      .hero-eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .02em; font-size: 0.95rem; margin-bottom: 0.75rem; display: inline-block; }
+      .hero h1 { font-size: clamp(2.6rem, 5.2vw, 4rem); line-height: 1.08; margin: 0 0 1rem; }
+      .hero p.tagline { color: var(--text-hero); font-size: clamp(1.05rem, 2vw, 1.2rem); line-height: 1.7; margin: 0 0 1.2rem; max-width: 60ch; }
+      .hero .resume-inline { font-weight: 700; color: var(--accent); }
+      .hero .resume-inline .arrow { margin-left: 6px; }
+      .hero-photo { display: grid; place-items: center; }
+      .avatar-ring { width: clamp(260px, 40vw, 460px); aspect-ratio: 1/1; border-radius: 50%; padding: 14px; background: radial-gradient(circle at 30% 30%, #dbeafe, transparent 60%); border: 8px solid #e6ecf5; box-shadow: 0 12px 32px rgba(2,6,23,0.12); display: grid; place-items: center; }
+      .avatar-ring img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 24px rgba(2,6,23,0.12); }
+      .hero-socials { margin-top: 1rem; }
 
-							
-						<!-- Footer -->
-							
+      /* Projects */
+      #projects { padding: 56px 0; }
+      #projects .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+      #projects .section-head h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+      .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease; }
+      .card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.45); }
+      .card .thumb { aspect-ratio: 16 / 9; background: var(--muted-surface); overflow: hidden; }
+      .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .card .body { padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+      .card .title { font-size: 1.05rem; }
+      .card .desc { color: var(--muted); font-size: 0.95rem; }
+      .card .actions { padding: 0 1rem 1rem; margin-top: auto; }
 
-					</div>
+      /* Skills */
+      #skills { padding: 56px 0; background: var(--muted-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+      :root[data-theme="dark"] #skills { background: #0f1320; }
+      #skills .section-head { text-align: center; margin-bottom: 2rem; }
+      #skills .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+      .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+      .skills-col { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.25rem; }
+      .skills-col h3 { margin: 0 0 0.75rem; font-size: 1.05rem; }
+      .skill-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+      .skill-item { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--text); }
+      .skill-item i { width: 24px; text-align: center; font-size: 1.1rem; }
+      /* Brand-ish colors */
+      .i-python{color:#3776AB}.i-sql{color:#2563eb}.i-r{color:#276DC3}
+      .i-sklearn{color:#F89939}.i-pytorch{color:#EE4C2C}.i-tf{color:#FF6F00}
+      .i-lstm{color:#7c3aed}.i-genai{color:#8b5cf6}.i-fastapi{color:#05998b}
+      .i-rest{color:#2563eb}.i-docker{color:#2496ED}.i-aws{color:#FF9900}
+      .i-colab{color:#EA4335}.i-mysql{color:#005E86}.i-postgres{color:#336791}
+      .i-powerbi{color:#F2C811}.i-tableau{color:#4E79A7}.i-pandas{color:#150458}
+      .i-numpy{color:#4DABCF}.i-mpl{color:#11557C}.i-seaborn{color:#4C78A8}
+      .i-git{color:#F05032}.i-agile{color:#10b981}.i-jira{color:#0052CC}
+      .i-jupyter{color:#F37626}.i-office{color:#2B579A}
 
-				<!-- Footer -->
-					<footer id="footer">
-					
-						</section>
-						<section class="split contact">
-							<!-- <section class="alt">
-								<h3>Address</h3>
-								<p>Lagos, Nigeria<br />
-								
-							
-							</section> -->
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">kehindeoabe@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<!-- <li><a href="https://www.linkedin.com/in/oluwaseyi-bondefaiye-owope-ab9951b1/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li> -->
-									<li><a href="https://github.com/kennyOlakunle" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+      /* Footer */
+      #footer { padding: 40px 0; border-top: 1px solid var(--border); }
+      #footer .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+      #footer a { color: var(--text); opacity: 0.9; }
+      #footer a:hover { opacity: 1; color: var(--accent); }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Designed With Love</li><li><a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+      /* Social icons (colored) */
+      .social-icons { display: flex; gap: 0.75rem; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+      .social-icons a { display: inline-flex; width: 42px; height: 42px; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border); box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease; }
+      .social-icons a:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+      .social-icons a.github { background: #161b22; color: #f0f6fc; }
+      .social-icons a.twitter { background: #1da1f2; color: #ffffff; }
+      .social-icons a.email { background: #f1f5f9; color: #0b0d14; }
 
-			</div>
+      /* Small screens */
+      @media (max-width: 860px) {
+        .hero-grid { grid-template-columns: 1fr; }
+        #header .links { gap: 0.9rem; }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
-	</body>
+      <!-- Header (sticky, above hero) -->
+      <header id="header" class="site-header">
+        <div class="container nav">
+          <a href="#intro" class="brand scrolly" aria-label="Home">
+            <img src="images/Ken.jpeg" alt="Logo" class="brand-avatar" />
+          </a>
+          <nav class="links" aria-label="Primary">
+            <a href="#intro" class="scrolly">Home</a>
+            <a href="#intro" class="scrolly">About me</a>
+            <a href="#projects" class="scrolly">Works</a>
+            <a href="#skills" class="scrolly">Skills</a>
+            <a href="#footer" class="scrolly">Contact me</a>
+            <a href="#" class="scrolly">Resumé</a>
+          </nav>
+          <div class="actions">
+            <button type="button" class="theme-toggle" aria-label="Toggle theme"><span class="icon solid fa-moon"></span></button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section id="intro" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <!-- <span class="hero-eyebrow">Hello 👋</span> -->
+            <h1>I'm Kehinde Abe</h1>
+            <p class="tagline">I'm a Data Scientist and Machine Learning Engineer focused on building exceptional, performant data applications that scale — turning complex problems into clean, accessible, and user‑friendly experiences.</p>
+            <p class="resume-link"><a href="#" class="resume-inline">View my resumé <span class="arrow">→</span></a></p>
+            <!-- <ul class="hero-socials social-icons">
+              <li><a href="mailto:kehindeoabe@gmail.com" class="icon solid fa-envelope email" aria-label="Email"><span class="label">Email</span></a></li>
+              <li><a href="https://github.com/kennyOlakunle" class="icon brands fa-github github" target="_blank" rel="noopener" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+              <li><a href="https://twitter.com/kennyOlakunle" class="icon brands fa-twitter twitter" target="_blank" rel="noopener" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+            </ul> -->
+          </div>
+          <div class="hero-photo">
+            <div class="avatar-ring">
+              <img src="images/Ken.jpeg" alt="Portrait of Kehinde Abe" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main -->
+      <main id="main">
+        <!-- Projects Section as Cards -->
+        <section id="projects">
+          <div class="container">
+            <div class="section-head">
+              <h2>Selected Work</h2>
+              <a href="https://github.com/kennyOlakunle" target="_blank" rel="noopener">More on GitHub →</a>
+            </div>
+            <div class="grid">
+              <!-- Card 1 -->
+              <article class="card">
+                <a class="thumb" href="https://github.com/kennyOlakunle/MLModelPredFor_Census_Income" target="_blank" rel="noopener">
+                  <img src="images/ml.png" alt="Census income ML project thumbnail" />
+                </a>
+                <div class="body">
+                  <h3 class="title"><a href="https://github.com/kennyOlakunle/MLModelPredFor_Census_Income" target="_blank" rel="noopener">Income Classification with ML</a></h3>
+                  <p class="desc">EDA, feature engineering, and ML models (Scikit-learn, Keras, TensorFlow) with cross-validation and hyperparameter tuning to predict >$50k income.</p>
+                </div>
+                <div class="actions">
+                  <a class="btn btn-ghost" href="https://github.com/kennyOlakunle/MLModelPredFor_Census_Income" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="card">
+                <a class="thumb" href="https://github.com/kennyOlakunle/MLPredictionFor_Medical_Insurance" target="_blank" rel="noopener">
+                  <img src="images/medcost.png" alt="Medical insurance cost prediction thumbnail" />
+                </a>
+                <div class="body">
+                  <h3 class="title"><a href="https://github.com/kennyOlakunle/MLPredictionFor_Medical_Insurance" target="_blank" rel="noopener">Medical Insurance Cost Prediction</a></h3>
+                  <p class="desc">Regression with Linear Regression and Random Forest using NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn.</p>
+                </div>
+                <div class="actions">
+                  <a class="btn btn-ghost" href="https://github.com/kennyOlakunle/MLPredictionFor_Medical_Insurance" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="card">
+                <a class="thumb" href="https://github.com/kennyOlakunle/foodhub_data_analysis" target="_blank" rel="noopener">
+                  <img src="images/Foodhub3.jpeg" alt="FoodHub data analysis thumbnail" />
+                </a>
+                <div class="body">
+                  <h3 class="title"><a href="https://github.com/kennyOlakunle/foodhub_data_analysis" target="_blank" rel="noopener">FoodHub Data Analysis</a></h3>
+                  <p class="desc">EDA and modeling to identify key pricing drivers and recommendations using NumPy, Pandas, scikit-learn, and statsmodels.</p>
+                </div>
+                <div class="actions">
+                  <a class="btn btn-ghost" href="https://github.com/kennyOlakunle/foodhub_data_analysis" target="_blank" rel="noopener">View Project</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+          <div class="container">
+            <div class="section-head">
+              <h2>Skills</h2>
+            </div>
+            <div class="skills-grid">
+              <div class="skills-col">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fab fa-python i-python"></i>Python</li>
+                  <li class="skill-item"><i class="fas fa-database i-sql"></i>SQL</li>
+                  <li class="skill-item"><i class="fab fa-r-project i-r"></i>R</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>ML & AI</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fas fa-brain i-sklearn"></i>Scikit‑learn</li>
+                  <li class="skill-item"><i class="fas fa-fire i-pytorch"></i>PyTorch</li>
+                  <li class="skill-item"><i class="fas fa-cubes i-tf"></i>TensorFlow</li>
+                  <li class="skill-item"><i class="fas fa-diagram-project i-lstm"></i>LSTMs</li>
+                  <li class="skill-item"><i class="fas fa-robot i-genai"></i>Generative AI (GenAI)</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>APIs & Deployment</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fas fa-bolt i-fastapi"></i>FastAPI</li>
+                  <li class="skill-item"><i class="fas fa-plug i-rest"></i>RESTful APIs</li>
+                  <li class="skill-item"><i class="fab fa-docker i-docker"></i>Docker</li>
+                  <li class="skill-item"><i class="fab fa-aws i-aws"></i>AWS (S3, Lambda)</li>
+                  <li class="skill-item"><i class="fab fa-google i-colab"></i>Google Colab</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>Databases</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fas fa-database i-mysql"></i>MySQL</li>
+                  <li class="skill-item"><i class="fas fa-database i-postgres"></i>PostgreSQL</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>Visualization & Analysis</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fas fa-chart-bar i-powerbi"></i>Power BI</li>
+                  <li class="skill-item"><i class="fas fa-chart-line i-tableau"></i>Tableau</li>
+                  <li class="skill-item"><i class="fas fa-table i-pandas"></i>Pandas</li>
+                  <li class="skill-item"><i class="fas fa-superscript i-numpy"></i>NumPy</li>
+                  <li class="skill-item"><i class="fas fa-chart-area i-mpl"></i>Matplotlib</li>
+                  <li class="skill-item"><i class="fas fa-water i-seaborn"></i>Seaborn</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>Version Control & Collaboration</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fab fa-git-alt i-git"></i>Git</li>
+                  <li class="skill-item"><i class="fas fa-sitemap i-agile"></i>Agile Methodologies</li>
+                  <li class="skill-item"><i class="fas fa-clipboard-check i-jira"></i>JIRA</li>
+                </ul>
+              </div>
+              <div class="skills-col">
+                <h3>Tools</h3>
+                <ul class="skill-list">
+                  <li class="skill-item"><i class="fas fa-book i-jupyter"></i>Jupyter Notebook</li>
+                  <li class="skill-item"><i class="fas fa-file-word i-office"></i>Microsoft Office Suite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="container split contact">
+          <section>
+            <h3>Connect</h3>
+            <ul class="social-icons">
+              <li><a href="mailto:kehindeoabe@gmail.com" class="icon solid fa-envelope email" aria-label="Email"><span class="label">Email</span></a></li>
+              <li><a href="https://github.com/kennyOlakunle" class="icon brands fa-github github" target="_blank" rel="noopener" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+              <li><a href="https://x.com/_Ken0x" class="icon brands fa-twitter twitter" target="_blank" rel="noopener" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+
+      <!-- Copyright -->
+      <!-- <div id="copyright">
+        <ul><li>&copy; Designed With Love</li><li><a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li></ul>
+      </div> -->
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        var btn = document.querySelector('.theme-toggle');
+        if (!btn) return;
+        function applyTheme(theme) {
+          document.documentElement.setAttribute('data-theme', theme);
+          try { localStorage.setItem('theme', theme); } catch (e) {}
+          var icon = btn.querySelector('span');
+          if (icon) {
+            icon.classList.remove('fa-moon', 'fa-sun');
+            icon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+          }
+          btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+        }
+        btn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme') || 'light';
+          applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+        var initial = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(initial);
+      })();
+    </script>
+  
+  </body>
 </html>
