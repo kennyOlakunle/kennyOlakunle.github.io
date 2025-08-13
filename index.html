@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Kehinde Abe — Data Scientist & ML Engineer</title>
+    <title>Kehinde Abe — Data Scientist</title>
 
     <!-- Base theme -->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -64,14 +64,15 @@
 
       /* Sticky header */
       #header.site-header { position: sticky; top: 0; z-index: 9999; backdrop-filter: saturate(150%) blur(8px); background: var(--header-bg); border-bottom: 1px solid var(--border); }
-      #header .nav { display: grid; grid-template-columns: auto 1fr auto; align-items: center; height: 44px; column-gap: 12px; }
-      #header .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); }
-      #header .brand-avatar { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 2px solid #e6ecf5; box-shadow: 0 4px 10px rgba(2,6,23,0.08); }
-      #header .links { display: flex; gap: 1.1rem; align-items: center; justify-content: center; }
-      #header .links a { color: var(--text); opacity: 0.9; font-weight: 600; font-size: 0.95rem; padding-block: 0.15rem; cursor: pointer; }
+      #header .nav { display: grid; grid-template-columns: auto 1fr auto; align-items: center; height: 24px !important; column-gap: 8px; padding-block: 0; }
+      #header .brand { display: flex; align-items: center; gap: 6px; font-weight: 700; color: var(--text); }
+      #header .brand-avatar { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; border: 1px solid #e6ecf5; box-shadow: 0 2px 6px rgba(2,6,23,0.12); }
+      #header .links { display: flex; gap: 0.7rem; align-items: center; justify-content: center; }
+      #header .links a { color: var(--text); opacity: 0.9; font-weight: 600; font-size: 0.78rem; line-height: 1; padding: 0; cursor: pointer; display: inline-flex; align-items: center; }
       #header .links a:hover { opacity: 1; color: #111827; }
-      #header .actions { display: flex; align-items: center; gap: 8px; }
-      #header .theme-toggle { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); background: #f8fafc; color: #0b1220; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow); }
+      #header .actions { display: flex; align-items: center; gap: 6px; }
+      #header .theme-toggle { width: 16px; height: 16px; border-radius: 50%; border: 1px solid var(--border); background: #f8fafc; color: #0b1220; display: inline-flex; align-items: center; justify-content: center; box-shadow: var(--shadow); }
+      #header .theme-toggle .icon { font-size: 0.65rem; }
       #header .resume-btn { display: none; }
 
       /* Ensure no legacy overlays block header clicks */
@@ -144,6 +145,8 @@
       .social-icons a.github { background: #161b22; color: #f0f6fc; }
       .social-icons a.twitter { background: #1da1f2; color: #ffffff; }
       .social-icons a.email { background: #f1f5f9; color: #0b0d14; }
+		
+
 
       /* Small screens */
       @media (max-width: 860px) {
@@ -157,7 +160,7 @@
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
 
-      <!-- Header (sticky, above hero) -->
+      <!-- Header (sticky, above hero)
       <header id="header" class="site-header">
         <div class="container nav">
           <a href="#intro" class="brand scrolly" aria-label="Home">
@@ -175,7 +178,7 @@
             <button type="button" class="theme-toggle" aria-label="Toggle theme"><span class="icon solid fa-moon"></span></button>
           </div>
         </div>
-      </header>
+      </header> -->
 
       <!-- Hero -->
       <section id="intro" class="hero">
