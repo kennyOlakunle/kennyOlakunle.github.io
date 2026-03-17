@@ -8,7 +8,7 @@ A modern data engineer portfolio and blog built with Next.js and markdown conten
 - Blog section with markdown-based articles
 - Sitemap, robots, RSS feed, and structured metadata for search visibility
 - Accessible navigation, focus states, and semantic page structure
-- Static generation for scalable delivery
+- Static export and GitHub Pages deployment workflow
 
 ## Local development
 
@@ -29,3 +29,7 @@ npm run dev
 npm run lint
 npm run build
 ```
+
+## Deployment
+
+This repo is configured for GitHub Pages deployment via GitHub Actions and exports the site as static files into `out/`.

@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Kehinde Abe | Data Engineer Portfolio",
   description:
     "Data engineer building reliable pipelines, machine learning systems, and modern data products.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kennyolakunle.github.io",
   location: "England, United Kingdom",
   email: "olakunlemuyiwa@gmail.com",
   github: "https://github.com/kennyOlakunle",

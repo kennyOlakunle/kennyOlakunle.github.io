@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Kehinde Abe | Data Engineer Portfolio</title>
+    <description>Technical writing on data engineering, pipelines, machine learning, and growth.</description>
+    <link>https://kennyolakunle.github.io</link>
+    <item>
+      <title><![CDATA[Building a Portfolio That Scales Beyond a Pretty Homepage]]></title>
+      <description><![CDATA[Why a strong engineering portfolio needs case studies, publishing infrastructure, and search-friendly structure.]]></description>
+      <link>https://kennyolakunle.github.io/blog/building-a-portfolio-that-scales/</link>
+      <guid>https://kennyolakunle.github.io/blog/building-a-portfolio-that-scales/</guid>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[What a Weather ETL Project Taught Me About Data Engineering]]></title>
+      <description><![CDATA[A reflection on using a small but complete ETL build to learn orchestration, observability, and operational thinking.]]></description>
+      <link>https://kennyolakunle.github.io/blog/from-data-science-to-data-engineering/</link>
+      <guid>https://kennyolakunle.github.io/blog/from-data-science-to-data-engineering/</guid>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Machine Learning Projects Become Stronger When People Can Actually Use Them]]></title>
+      <description><![CDATA[Why I like pairing models with simple interfaces instead of stopping at notebook outputs.]]></description>
+      <link>https://kennyolakunle.github.io/blog/ml-projects-need-better-interfaces/</link>
+      <guid>https://kennyolakunle.github.io/blog/ml-projects-need-better-interfaces/</guid>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
