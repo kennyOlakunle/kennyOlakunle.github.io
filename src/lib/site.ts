@@ -7,8 +7,7 @@ export const siteConfig = {
   location: "England, United Kingdom",
   email: "olakunlemuyiwa@gmail.com",
   github: "https://github.com/kennyOlakunle",
-  devto: "https://dev.to/kehinde_abe_5408cc71d4fc04",
-  linkedin: "https://www.linkedin.com/in/kehinde-abe/"
+  devto: "https://dev.to/kehinde_abe_5408cc71d4fc04"
 };
 
 export const navLinks = [
