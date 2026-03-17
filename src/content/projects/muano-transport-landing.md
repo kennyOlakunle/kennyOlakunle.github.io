@@ -5,7 +5,7 @@ description: "Private client-style landing page case study for MUANO & CO transp
 year: "2026"
 role: "Frontend Product Build"
 status: "Private delivery"
-featured: true
+featured: false
 visibility: "private"
 stack:
   - "HTML"
@@ -31,7 +31,7 @@ Service businesses often lose visitors because their websites bury the offer, ov
 
 ## Why it matters
 
-Even when the tech stack is simple, the product thinking matters. This build demonstrates how frontend work supports business outcomes through layout, readability, and conversion flow rather than just styling.
+Even when the tech stack is simple, the product thinking matters. This build demonstrates how delivery choices support business outcomes through layout, readability, and conversion flow rather than just styling.
 
 ## Notes
 

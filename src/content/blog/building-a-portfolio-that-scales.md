@@ -5,7 +5,7 @@ publishedAt: "2026-03-17"
 featured: true
 tags:
   - "portfolio"
-  - "frontend"
+  - "data-engineering"
   - "seo"
 ---
 A portfolio does two jobs at once: it helps people understand what you can build, and it helps them trust how you think. That means the site cannot stop at a polished hero section. It needs structure underneath the surface.

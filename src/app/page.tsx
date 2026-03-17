@@ -6,9 +6,9 @@ import { getFeaturedPosts, getFeaturedProjects } from "@/lib/content";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const strengths = [
-  "Data pipelines and backend services that stay observable under load",
-  "Machine learning projects translated into usable product experiences",
-  "Marketing and product websites that feel polished, fast, and conversion-minded"
+  "Batch and scheduled pipelines that stay observable under load",
+  "Warehouse-ready data models designed for reporting and downstream analytics",
+  "Machine learning projects translated into usable tools with production-minded delivery"
 ];
 
 export default function HomePage() {
@@ -33,10 +33,10 @@ export default function HomePage() {
         <div className="shell hero-shell">
           <div className="hero-copy">
             <p className="eyebrow">Data engineer with a product mindset</p>
-            <h1>I build data systems that turn raw information into usable, measurable outcomes.</h1>
+            <h1>I build data platforms that turn raw events into trusted, analytics-ready decision systems.</h1>
             <p className="hero-text">
-              From ETL workflows and orchestration to analytics-ready pipelines and ML prototypes, I focus on
-              systems that are observable, resilient, and easy to grow.
+              From ETL workflows and orchestration to warehouse-friendly modeling and ML prototypes, I focus
+              on systems that are observable, resilient, and easy to grow.
             </p>
             <div className="button-row">
               <Link href="/projects" className="primary-button">
@@ -50,11 +50,11 @@ export default function HomePage() {
           <aside className="hero-panel" aria-label="Highlights">
             <div>
               <span className="panel-label">Now building</span>
-              <strong>Data pipelines, orchestration workflows, and ML-powered tools</strong>
+              <strong>Ingestion pipelines, orchestration workflows, and analytics-ready data products</strong>
             </div>
             <div>
               <span className="panel-label">Approach</span>
-              <strong>Case-study thinking, observable systems, and pragmatic data engineering</strong>
+              <strong>Case-study thinking, warehouse-aware modeling, and pragmatic data engineering</strong>
             </div>
             <div>
               <span className="panel-label">Publishing</span>
@@ -68,15 +68,15 @@ export default function HomePage() {
         <div className="shell signal-grid">
           <div>
             <span>Featured work</span>
-            <strong>{featuredProjects.length} highlighted case studies</strong>
+            <strong>{featuredProjects.length} case studies across ingestion, transformation, and ML workflows</strong>
           </div>
           <div>
             <span>Writing system</span>
-            <strong>Markdown-powered blog with RSS, sitemap, and metadata</strong>
+            <strong>Markdown-powered blog for pipelines, platform thinking, and technical depth</strong>
           </div>
           <div>
             <span>Built for scale</span>
-            <strong>Static-first Next.js structure ready for high traffic</strong>
+            <strong>Static-first publishing stack ready for search traffic and technical content growth</strong>
           </div>
         </div>
       </section>
@@ -85,10 +85,10 @@ export default function HomePage() {
         <div className="shell">
           <div className="section-heading">
             <p className="eyebrow">Selected projects</p>
-            <h2>Project cards that open into full build stories.</h2>
+            <h2>Projects centered on data ingestion, orchestration, and analytics thinking.</h2>
             <p>
-              Inspired by high-performing data portfolios, each card gives a quick read while the case study
-              page opens the fuller documentation behind the work.
+              Each card gives a fast overview, while the case study page opens the technical details behind
+              the pipeline design, modeling decisions, and operational trade-offs.
             </p>
           </div>
           <div className="project-grid">
@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="shell two-column">
           <div className="section-heading compact-heading">
             <p className="eyebrow">How I work</p>
-            <h2>Built to be readable by users, recruiters, and search engines.</h2>
+            <h2>Built to be readable by hiring teams, collaborators, and search engines.</h2>
           </div>
           <ul className="strength-list">
             {strengths.map((strength) => (
@@ -117,7 +117,7 @@ export default function HomePage() {
         <div className="shell">
           <div className="section-heading">
             <p className="eyebrow">Latest writing</p>
-            <h2>A blog setup ready for technical articles and long-form thinking.</h2>
+            <h2>A blog setup ready for data engineering articles and long-form thinking.</h2>
           </div>
           <div className="post-grid">
             {featuredPosts.map((post) => (

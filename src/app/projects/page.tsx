@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Project case studies by Kehinde Abe across data engineering, ML, and frontend delivery.",
+  description: "Project case studies by Kehinde Abe across pipelines, orchestration, analytics, and machine learning.",
   alternates: {
     canonical: absoluteUrl("/projects")
   }
@@ -19,10 +19,10 @@ export default function ProjectsPage() {
       <div className="shell">
         <div className="section-heading">
           <p className="eyebrow">Projects</p>
-          <h1>Case studies, experiments, and shipped products.</h1>
+          <h1>Case studies across pipelines, orchestration, and applied machine learning.</h1>
           <p>
             These cards open into fuller documentation so visitors can move from fast scanning to technical
-            depth without losing context.
+            depth on ingestion patterns, transformations, storage choices, and delivery decisions.
           </p>
         </div>
         <div className="project-grid">

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 const principles = [
-  "Start from the user need, then work backward to the architecture.",
-  "Prefer systems that are observable, documented, and easy for others to extend.",
-  "Treat content and discoverability as product features, not afterthoughts."
+  "Start from the reporting or operational need, then work backward to the data architecture.",
+  "Prefer pipelines that are observable, documented, and easy for others to extend.",
+  "Model data so it stays useful for analytics, warehousing, and downstream consumers."
 ];
 
 export default function AboutPage() {
@@ -21,11 +21,11 @@ export default function AboutPage() {
     <section className="section-block page-intro">
       <div className="shell narrow-shell">
         <p className="eyebrow">About</p>
-        <h1>Data engineering across pipelines, machine learning, and modern delivery.</h1>
+        <h1>Data engineering across ingestion, orchestration, and analytics delivery.</h1>
         <p className="lead">
-          I enjoy building systems that connect technical depth with real outcomes: data pipelines that
-          automate workflows, orchestration that keeps them reliable, and ML experiments that become usable
-          tools for real people.
+          I enjoy building systems that connect technical depth with real outcomes: pipelines that automate
+          workflows, orchestration that keeps them reliable, and data models that stay useful for analytics,
+          dashboards, and machine learning.
         </p>
         <div className="rich-panel">
           <h2>What I optimize for</h2>
