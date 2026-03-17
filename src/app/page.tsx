@@ -22,7 +22,7 @@ export default function HomePage() {
           "@context": "https://schema.org",
           "@type": "Person",
           name: siteConfig.name,
-          jobTitle: "Software Engineer",
+          jobTitle: "Data Engineer",
           description: siteConfig.description,
           email: siteConfig.email,
           url: absoluteUrl("/"),
@@ -32,11 +32,11 @@ export default function HomePage() {
       <section className="hero">
         <div className="shell hero-shell">
           <div className="hero-copy">
-            <p className="eyebrow">Software engineer with a data and product mindset</p>
-            <h1>I build software that turns ideas into usable, measurable systems.</h1>
+            <p className="eyebrow">Data engineer with a product mindset</p>
+            <h1>I build data systems that turn raw information into usable, measurable outcomes.</h1>
             <p className="hero-text">
-              From ETL workflows and ML prototypes to responsive web experiences, I focus on products that
-              are clear to use, resilient to ship, and easy to grow.
+              From ETL workflows and orchestration to analytics-ready pipelines and ML prototypes, I focus on
+              systems that are observable, resilient, and easy to grow.
             </p>
             <div className="button-row">
               <Link href="/projects" className="primary-button">
@@ -50,11 +50,11 @@ export default function HomePage() {
           <aside className="hero-panel" aria-label="Highlights">
             <div>
               <span className="panel-label">Now building</span>
-              <strong>Data systems, ML tools, and conversion-focused websites</strong>
+              <strong>Data pipelines, orchestration workflows, and ML-powered tools</strong>
             </div>
             <div>
               <span className="panel-label">Approach</span>
-              <strong>Case-study thinking, accessible frontend craft, and pragmatic engineering</strong>
+              <strong>Case-study thinking, observable systems, and pragmatic data engineering</strong>
             </div>
             <div>
               <span className="panel-label">Publishing</span>
@@ -87,8 +87,8 @@ export default function HomePage() {
             <p className="eyebrow">Selected projects</p>
             <h2>Project cards that open into full build stories.</h2>
             <p>
-              Inspired by high-performing engineer portfolios, each card gives a quick read while the case
-              study page opens the fuller documentation behind the work.
+              Inspired by high-performing data portfolios, each card gives a quick read while the case study
+              page opens the fuller documentation behind the work.
             </p>
           </div>
           <div className="project-grid">

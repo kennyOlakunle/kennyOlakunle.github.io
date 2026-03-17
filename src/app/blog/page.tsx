@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Articles on software engineering, data systems, machine learning, and technical growth.",
+  description: "Articles on data engineering, pipelines, machine learning, and technical growth.",
   alternates: {
     canonical: absoluteUrl("/blog")
   }

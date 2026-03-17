@@ -9,7 +9,7 @@ export function SiteHeader() {
           <span className="brand-kicker">KA</span>
           <span className="brand-copy">
             <strong>Kehinde Abe</strong>
-            <small>Software Engineer</small>
+            <small>Data Engineer</small>
           </span>
         </Link>
         <nav aria-label="Primary navigation">

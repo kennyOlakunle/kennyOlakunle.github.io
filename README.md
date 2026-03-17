@@ -1,6 +1,6 @@
-# Kehinde Abe Portfolio
+# Kehinde Abe Data Engineer Portfolio
 
-A modern portfolio and blog built with Next.js and markdown content collections.
+A modern data engineer portfolio and blog built with Next.js and markdown content collections.
 
 ## Features
 

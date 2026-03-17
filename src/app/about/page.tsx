@@ -4,7 +4,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Kehinde Abe, a software engineer building data, ML, and web products.",
+  description: "About Kehinde Abe, a data engineer building pipelines, ML systems, and data products.",
   alternates: {
     canonical: absoluteUrl("/about")
   }
@@ -21,11 +21,11 @@ export default function AboutPage() {
     <section className="section-block page-intro">
       <div className="shell narrow-shell">
         <p className="eyebrow">About</p>
-        <h1>Engineering across data, machine learning, and modern web delivery.</h1>
+        <h1>Data engineering across pipelines, machine learning, and modern delivery.</h1>
         <p className="lead">
-          I enjoy building software that connects technical depth with real outcomes: data pipelines that
-          automate workflows, ML experiments that become usable tools, and websites that communicate clearly
-          and convert attention into action.
+          I enjoy building systems that connect technical depth with real outcomes: data pipelines that
+          automate workflows, orchestration that keeps them reliable, and ML experiments that become usable
+          tools for real people.
         </p>
         <div className="rich-panel">
           <h2>What I optimize for</h2>

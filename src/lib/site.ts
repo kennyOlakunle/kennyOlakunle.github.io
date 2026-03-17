@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Kehinde Abe",
-  title: "Kehinde Abe | Software Engineer Portfolio",
+  title: "Kehinde Abe | Data Engineer Portfolio",
   description:
-    "Software engineer building data products, machine learning systems, and modern web experiences.",
+    "Data engineer building reliable pipelines, machine learning systems, and modern data products.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   location: "England, United Kingdom",
   email: "olakunlemuyiwa@gmail.com",
