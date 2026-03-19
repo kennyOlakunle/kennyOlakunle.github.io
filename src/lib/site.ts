@@ -5,9 +5,9 @@ export const siteConfig = {
     "Data engineer building reliable pipelines, machine learning systems, and modern data products.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kennyolakunle.github.io",
   location: "England, United Kingdom",
-  email: "olakunlemuyiwa@gmail.com",
+  email: "kehindeoabe@gmail.com",
   github: "https://github.com/kennyOlakunle",
-  devto: "https://dev.to/kehinde_abe_5408cc71d4fc04"
+  devto: "https://dev.to/_ken0x"
 };
 
 export const navLinks = [

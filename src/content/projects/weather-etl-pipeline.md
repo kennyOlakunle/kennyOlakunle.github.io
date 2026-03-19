@@ -4,7 +4,7 @@ summary: "An end-to-end ETL workflow that ingests weather data, transforms it, s
 description: "Case study for a weather ETL pipeline built with Python, Supabase, Prefect 3, and Docker."
 year: "2026"
 role: "Data Engineering Project"
-status: "Shipped locally with orchestration and monitoring"
+status: "Shipped with orchestration and monitoring"
 featured: true
 visibility: "public"
 stack:
