@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import { MarkdownContent } from "@/components/markdown-content";
@@ -68,7 +69,15 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
         <p className="post-meta detail-post-meta">
           <span>{new Date(post.publishedAt).toLocaleDateString("en-GB", { dateStyle: "medium" })}</span>
           <span>{post.readingTime}</span>
+          {post.sourceName ? <span>From {post.sourceName}</span> : null}
         </p>
+        {post.sourceUrl ? (
+          <div className="button-row">
+            <Link href={post.sourceUrl} className="secondary-button" target="_blank">
+              Read original article
+            </Link>
+          </div>
+        ) : null}
         <ul className="tag-list detail-tags">
           {post.tags.map((tag) => (
             <li key={tag}>{tag}</li>

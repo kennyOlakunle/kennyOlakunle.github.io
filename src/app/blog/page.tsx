@@ -21,8 +21,8 @@ export default function BlogPage() {
           <p className="eyebrow">Blog</p>
           <h1>Technical writing built for search, sharing, and depth.</h1>
           <p>
-            The blog uses crawlable routes, article metadata, RSS, and structured content so new posts are
-            easy to publish and discover.
+            The blog uses crawlable routes, article metadata, RSS, and structured content, and it can now
+            include imported writing from DEV Community and Hashnode alongside local posts.
           </p>
         </div>
         <div className="post-grid">

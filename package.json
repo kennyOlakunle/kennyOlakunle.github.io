@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/generate-rss.mjs && next build",
+    "import:articles": "node scripts/import-articles.mjs",
     "start": "next start",
     "lint": "eslint ."
   },

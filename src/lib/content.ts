@@ -31,6 +31,8 @@ export type Post = BaseEntry & {
   featured: boolean;
   tags: string[];
   readingTime: string;
+  sourceName?: string;
+  sourceUrl?: string;
 };
 
 function readCollection(collection: string) {
@@ -104,7 +106,9 @@ export function getAllPosts(): Post[] {
       publishedAt: String(data.publishedAt),
       featured: Boolean(data.featured),
       tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
-      readingTime: getReadingTime(content)
+      readingTime: getReadingTime(content),
+      sourceName: data.sourceName ? String(data.sourceName) : undefined,
+      sourceUrl: data.sourceUrl ? String(data.sourceUrl) : undefined
     }))
     .sort(
       (left, right) =>

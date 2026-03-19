@@ -11,6 +11,7 @@ export function PostCard({ post }: PostCardProps) {
       <p className="post-meta">
         <span>{new Date(post.publishedAt).toLocaleDateString("en-GB", { dateStyle: "medium" })}</span>
         <span>{post.readingTime}</span>
+        {post.sourceName ? <span>From {post.sourceName}</span> : null}
       </p>
       <h3>
         <Link href={`/blog/${post.slug}`}>{post.title}</Link>

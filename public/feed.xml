@@ -22,6 +22,54 @@
       <link>https://kennyolakunle.github.io/blog/ml-projects-need-better-interfaces/</link>
       <guid>https://kennyolakunle.github.io/blog/ml-projects-need-better-interfaces/</guid>
       <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Building a Sarcasm Detection System with LSTM and GloVe: A Complete Guide]]></title>
+      <description><![CDATA[Before We Begin :) Detecting sarcasm is more than just spotting ironic statements. It involves...]]></description>
+      <link>https://kennyolakunle.github.io/blog/building-a-sarcasm-detection-system-with-lstm-and-glove-a-complete-guide-m1h/</link>
+      <guid>https://kennyolakunle.github.io/blog/building-a-sarcasm-detection-system-with-lstm-and-glove-a-complete-guide-m1h/</guid>
+      <pubDate>Thu, 02 Jan 2025 10:28:53 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Downloading and Converting YouTube Videos to MP3 using yt-dlp in Python]]></title>
+      <description><![CDATA[The popularity of video content on websites like YouTube has increased user demand for audio...]]></description>
+      <link>https://kennyolakunle.github.io/blog/downloading-and-converting-youtube-videos-to-mp3-using-yt-dlp-in-python-20c5/</link>
+      <guid>https://kennyolakunle.github.io/blog/downloading-and-converting-youtube-videos-to-mp3-using-yt-dlp-in-python-20c5/</guid>
+      <pubDate>Sun, 06 Oct 2024 22:14:48 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[TinyLlama LLM: A Step-by-Step Guide to Implementing the 1.1B Model on Google Colab]]></title>
+      <description><![CDATA[LLM, or Large Language Model, is an advanced artificial intelligence program designed for...]]></description>
+      <link>https://kennyolakunle.github.io/blog/tinyllama-llm-a-step-by-step-guide-to-implementing-the-11b-model-on-google-colab-1pjh/</link>
+      <guid>https://kennyolakunle.github.io/blog/tinyllama-llm-a-step-by-step-guide-to-implementing-the-11b-model-on-google-colab-1pjh/</guid>
+      <pubDate>Sat, 06 Jan 2024 18:13:42 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[The Importance of Upholding Data Privacy: A Data Scientist's Responsibility]]></title>
+      <description><![CDATA[Introduction As a data scientist, I understand the importance of data privacy and security. Data privacy refers to the protection of personal information and sensitive data from unauthorized access, use, or disclosure. It is essential for every indiv...]]></description>
+      <link>https://kennyolakunle.github.io/blog/the-importance-of-upholding-data-privacy-a-data-scientists-responsibility/</link>
+      <guid>https://kennyolakunle.github.io/blog/the-importance-of-upholding-data-privacy-a-data-scientists-responsibility/</guid>
+      <pubDate>Tue, 04 Apr 2023 11:46:55 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[A Guide to Data Cleaning and Preparation for Data Science]]></title>
+      <description><![CDATA[Data is the lifeblood of any successful data science project, but it's not always in its pristine form. Unfortunately, raw data often comes with missing values, duplicates, outliers and other anomalies that can significantly impact the accuracy of yo...]]></description>
+      <link>https://kennyolakunle.github.io/blog/a-guide-to-data-cleaning-and-preparation-for-data-science/</link>
+      <guid>https://kennyolakunle.github.io/blog/a-guide-to-data-cleaning-and-preparation-for-data-science/</guid>
+      <pubDate>Thu, 30 Mar 2023 16:15:46 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Automate the boring stuff with Python]]></title>
+      <description><![CDATA[Personalizing your cover letter can be daunting at times, imagine you're sending hundreds of job applications per week, look at how frustrated the guy in the image below is: I was like this guy, but things became easy for me when I started putting m...]]></description>
+      <link>https://kennyolakunle.github.io/blog/automate-the-boring-stuff-with-python/</link>
+      <guid>https://kennyolakunle.github.io/blog/automate-the-boring-stuff-with-python/</guid>
+      <pubDate>Sun, 26 Sep 2021 16:56:39 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Building an Image repository with Node.js, Express, MongoDB and Multer]]></title>
+      <description><![CDATA[Quick Summary With the help of this tutorial, you can learn how to build and integrate an Image repository by uploading files on the server with the help of Multer and Express in Node.js. This tutorial will also show you a step-by-step process of int...]]></description>
+      <link>https://kennyolakunle.github.io/blog/building-an-image-repository-with-nodejs-express-mongodb-and-multer/</link>
+      <guid>https://kennyolakunle.github.io/blog/building-an-image-repository-with-nodejs-express-mongodb-and-multer/</guid>
+      <pubDate>Mon, 12 Apr 2021 21:44:45 GMT</pubDate>
+    </item><item>
+      <title><![CDATA[Getting Started With Automated Testing Using Jest for JavaScript Applications]]></title>
+      <description><![CDATA[What does testing mean? what is automated testing? Do we really need to test our code? How do I achieve this? what should I test? These are popularly asked questions and this article aims to provide answers for them. Firstly, we need to understand t...]]></description>
+      <link>https://kennyolakunle.github.io/blog/getting-started-with-automated-testing-using-jest-for-javascript-applications/</link>
+      <guid>https://kennyolakunle.github.io/blog/getting-started-with-automated-testing-using-jest-for-javascript-applications/</guid>
+      <pubDate>Mon, 14 Dec 2020 20:34:28 GMT</pubDate>
     </item>
   </channel>
 </rss>
