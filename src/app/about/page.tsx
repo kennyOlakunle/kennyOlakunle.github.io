@@ -4,16 +4,17 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Kehinde Abe, a data engineer building pipelines, ML systems, and data products.",
+  description:
+    "About Kehinde Abe, a data engineer building pipelines, orchestration workflows, and analytics-ready data systems.",
   alternates: {
     canonical: absoluteUrl("/about")
   }
 };
 
 const principles = [
-  "Start from the reporting or operational need, then work backward to the data architecture.",
-  "Prefer pipelines that are observable, documented, and easy for others to extend.",
-  "Model data so it stays useful for analytics, warehousing, and downstream consumers."
+  "Design ingestion and transformation workflows that are reliable, observable, and easy to extend.",
+  "Model data so it stays useful for warehousing, reporting, analytics, and downstream consumers.",
+  "Use Python, SQL, and orchestration tools to turn raw inputs into dependable data products."
 ];
 
 export default function AboutPage() {
@@ -21,14 +22,20 @@ export default function AboutPage() {
     <section className="section-block page-intro">
       <div className="shell narrow-shell">
         <p className="eyebrow">About</p>
-        <h1>Data engineering across ingestion, orchestration, and analytics delivery.</h1>
+        <h1>Data engineering across pipelines, orchestration, and analytics delivery.</h1>
         <p className="lead">
-          I enjoy building systems that connect technical depth with real outcomes: pipelines that automate
-          workflows, orchestration that keeps them reliable, and data models that stay useful for analytics,
-          dashboards, and machine learning.
+          I build data systems that move information from raw source data to reliable, analytics-ready
+          outputs. My focus is on ingestion, transformation, orchestration, and modeling that help teams
+          work with data they can trust.
+        </p>
+        <p>
+          I enjoy the engineering side of data work: designing ETL and ELT workflows, structuring warehouse-
+          friendly datasets, and building pipelines that are maintainable as requirements grow. The goal is
+          always the same: turn messy inputs into clean, dependable systems for reporting, operations, and
+          machine learning.
         </p>
         <div className="rich-panel">
-          <h2>What I optimize for</h2>
+          <h2>What I focus on</h2>
           <ul className="strength-list">
             {principles.map((item) => (
               <li key={item}>{item}</li>
@@ -43,6 +50,9 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow">Find me on</p>
             <div className="inline-links">
+              <Link href={siteConfig.linkedin} target="_blank">
+                LinkedIn
+              </Link>
               <Link href={siteConfig.github} target="_blank">
                 GitHub
               </Link>

@@ -26,7 +26,7 @@ export default function HomePage() {
           description: siteConfig.description,
           email: siteConfig.email,
           url: absoluteUrl("/"),
-          sameAs: [siteConfig.github, siteConfig.devto]
+          sameAs: [siteConfig.github, siteConfig.devto, siteConfig.linkedin]
         }}
       />
       <section className="hero">
