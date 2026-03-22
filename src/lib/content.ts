@@ -3,6 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 
 const contentRoot = path.join(process.cwd(), "src", "content");
+const lastProjectSlug = "muano-transport-landing";
 
 type BaseEntry = {
   slug: string;
@@ -85,7 +86,17 @@ export function getAllProjects(): Project[] {
         visibility
       };
     })
-    .sort((left, right) => Number(right.year) - Number(left.year));
+    .sort((left, right) => {
+      if (left.slug === lastProjectSlug) {
+        return 1;
+      }
+
+      if (right.slug === lastProjectSlug) {
+        return -1;
+      }
+
+      return Number(right.year) - Number(left.year);
+    });
 }
 
 export function getProjectBySlug(slug: string) {
