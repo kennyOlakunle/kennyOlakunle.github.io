@@ -20,10 +20,10 @@ export default function BlogPage() {
         <div className="section-heading">
           <p className="eyebrow">Blog</p>
           <h1>Technical writing built for search, sharing, and depth.</h1>
-          <p>
+          {/* <p>
             The blog uses crawlable routes, article metadata, RSS, and structured content, and it can now
             include imported writing from DEV Community and Hashnode alongside local posts.
-          </p>
+          </p> */}
         </div>
         <div className="post-grid">
           {posts.map((post) => (
